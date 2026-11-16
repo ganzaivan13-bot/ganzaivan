@@ -20,7 +20,16 @@
 <body data-language="en">
 <header class="nav-wrap">
 <nav class="nav container">
-<a class="brand" href="#home"><span class="brand-mark">G</span> GANZA IVAN<span class="brand-dot">.</span></a>
+
+<a class="brand" href="#home">
+    <img
+        src="{{ url_for('static', filename='images/favicon.png') }}"
+        alt="GI Logo"
+        class="brand-center"
+    >
+    GANZA IVAN<span class="brand-dot">.</span>
+</a>
+
 <button aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle">☰</button>
 <div class="nav-links">
 <a data-en="About" data-rw="Ibyerekeye" href="#about">About</a><a data-en="Services" data-rw="Serivisi" href="#services">Services</a><a class="nav-cta" data-en-html="Book a service &lt;span&gt;↗&lt;/span&gt;" data-rw-html="Saba serivisi ↗" href="#booking">Book a service <span>↗</span></a>
@@ -134,7 +143,11 @@
 </div>
 </section>
 </main>
-<footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">G</span> GANZA IVAN<span class="brand-dot">.</span></a><p data-en="Web Developer · Rwanda" data-rw="Umuhanga mu mbuga za interineti · Rwanda">Web Developer · Rwanda</p><a data-en="BACK TO TOP ↑" data-rw="SUBIRA HEJURU ↑" href="#home">BACK TO TOP ↑</a><small data-en="© 2026 Ganza Ivan. All rights reserved." data-rw="© 2026 Ganza Ivan. Uburenganzira bwose burabitswe.">© 2026 Ganza Ivan. All rights reserved.</small></div></footer>
+<footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><img
+    src="{{ url_for('static', filename='images/favicon.png') }}"
+    alt=" Logo"
+    class="brand-center"
+> GANZA IVAN<span class="brand-dot">.</span></a><p data-en="Web Developer · Rwanda" data-rw="Umuhanga mu mbuga za interineti · Rwanda">Web Developer · Rwanda</p><a data-en="BACK TO TOP ↑" data-rw="SUBIRA HEJURU ↑" href="#home">BACK TO TOP ↑</a><small data-en="© 2026 Ganza Ivan. All rights reserved." data-rw="© 2026 Ganza Ivan. Uburenganzira bwose burabitswe.">© 2026 Ganza Ivan. All rights reserved.</small></div></footer>
 <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
