@@ -197,5 +197,14 @@ def update_status(booking_id):
 with app.app_context():
     db.create_all()
 
+@app.route("/robots.txt")
+def robots():
+    return app.send_static_file("robots.txt")
+
+@app.route("/sitemap.xml")
+def sitemap():
+    return app.send_static_file("sitemap.xml")
+
+
 if __name__ == "__main__":
     app.run(debug=os.environ.get("FLASK_DEBUG") == "1")

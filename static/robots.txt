@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://ganza-ivan-portfolio.onrender.com/sitemap.xml
